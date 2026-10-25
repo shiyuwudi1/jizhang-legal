@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>简记 · 支持</title>
+<style>
+  :root {
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --text: #14161a;
+    --muted: #5d6470;
+    --accent: #4c7dff;
+    --line: rgba(20, 22, 26, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d0f14;
+      --card: #161a22;
+      --text: #eef1f6;
+      --muted: #9aa3b2;
+      --line: rgba(255, 255, 255, 0.1);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 16px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Segoe UI", sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    padding: clamp(24px, 5vw, 56px);
+    box-shadow: 0 18px 60px rgba(30, 40, 80, 0.08);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .mark {
+    width: 44px; height: 44px; border-radius: 13px;
+    background: linear-gradient(135deg, #5b7cfa, #26c6b8);
+    box-shadow: 0 8px 20px rgba(76, 125, 255, 0.3);
+  }
+  .brand strong { font-size: 17px; letter-spacing: 0.02em; }
+  h1 { font-size: clamp(26px, 4vw, 34px); line-height: 1.25; margin: 0 0 8px; letter-spacing: -0.02em; }
+  h2 { font-size: 20px; line-height: 1.4; margin: 36px 0 10px; letter-spacing: -0.01em; }
+  h3 { font-size: 17px; line-height: 1.5; margin: 26px 0 6px; }
+  p, li { color: var(--text); }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+  .lede { color: var(--muted); font-size: 17px; }
+  ul { padding-left: 22px; }
+  li { margin: 8px 0; }
+  .callout {
+    margin: 28px 0;
+    padding: 18px 20px;
+    border-radius: 16px;
+    background: rgba(76, 125, 255, 0.08);
+    border: 1px solid rgba(76, 125, 255, 0.18);
+  }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.92em;
+    background: rgba(127, 140, 170, 0.12);
+    padding: 2px 6px;
+    border-radius: 6px;
+    word-break: break-all;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 36px; }
+  details {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin: 10px 0;
+    background: rgba(127, 140, 170, 0.04);
+  }
+  details summary { cursor: pointer; font-weight: 600; }
+  details[open] summary { margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><div class="mark" aria-hidden="true"></div><strong>简记 Jizhang</strong></div>
+  <h1>支持</h1>
+  <p class="meta">版本 1.0 · 适用 iOS / iPadOS 26.0 及以上</p>
+
+  <p class="lede">遇到问题、发现 Bug 或有功能建议，欢迎联系我们。</p>
+
+  <div class="callout">
+    <strong>联系邮箱：</strong><code>shiyuwudi@gmail.com</code><br>
+    请在邮件中附上设备型号、iOS 版本、App 版本与复现步骤。为保护隐私，请勿发送真实账目截图或包含个人信息的收据照片。
+  </div>
+
+  <h2>常见问题</h2>
+
+  <details>
+    <summary>我的数据存在哪里？</summary>
+    <p>所有账户、流水、预算、项目和偏好设置都保存在你设备的本地应用目录中，不会上传服务器。简记无需注册账号，也没有云端副本。</p>
+  </details>
+
+  <details>
+    <summary>换手机或重装 App 后数据还在吗？</summary>
+    <p>不会自动迁移。当前版本未启用 iCloud 同步，数据只存在于原设备。请在换机或卸载前，通过「我的 → 导出中心」导出 CSV / JSON 备份。</p>
+  </details>
+
+  <details>
+    <summary>如何备份和导出？</summary>
+    <p>打开「我的 → 导出中心」，选择 CSV 或 JSON 导出全部流水。流水页也支持按条件筛选后导出，并可直接分享文件到「文件」App。</p>
+  </details>
+
+  <details>
+    <summary>如何切换记账成员？</summary>
+    <p>首页左上角的成员胶囊按钮可以切换「全部成员」或某位成员；切换后首页统计、成员对比和筛选会同步变化。</p>
+  </details>
+
+  <details>
+    <summary>如何设置预算？</summary>
+    <p>「我的 → 预算」→ 右上角「+」，可以按分类、成员、项目或总支出设置预算，并选择月 / 年 / 自定义周期与预警阈值。</p>
+  </details>
+
+  <details>
+    <summary>打开 App 后没有看到新手教程？</summary>
+    <p>新手教程只在首次启动时自动弹出。之后可以随时从「我的 → 新手教程」重新进入。</p>
+  </details>
+
+  <details>
+    <summary>支持哪些系统版本？</summary>
+    <p>iOS / iPadOS 26.0 及以上。iPhone 与 iPad 均可使用。</p>
+  </details>
+
+  <details>
+    <summary>能否多设备同步？</summary>
+    <p>当前版本数据仅保存在本机，暂不支持多设备同步。请使用导出功能自行备份。</p>
+  </details>
+
+  <details>
+    <summary>如何导入演示数据？</summary>
+    <p>「我的 → 数据 → 导入示例数据」会追加示例账户、成员、项目、预算与近 6 个月流水，不会删除已有数据。</p>
+  </details>
+
+  <details>
+    <summary>如何彻底删除数据？</summary>
+    <p>删除简记 App 即可清除该设备上的全部本地数据。删除前请先导出备份，删除后无法恢复。</p>
+  </details>
+
+  <h2>版本记录</h2>
+  <h3>1.0</h3>
+  <ul>
+    <li>首次发布</li>
+    <li>分成员、分项目、预算与 11 种报表图表</li>
+    <li>本地存储、CSV / JSON 导出</li>
+    <li>新手教程</li>
+  </ul>
+
+  <hr>
+  <footer>© 2026 简记 Jizhang · 记录每一笔生活的重量 · <a href="./privacy.html">隐私政策</a></footer>
+</main>
+</body>
+</html>

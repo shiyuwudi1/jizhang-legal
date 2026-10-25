@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>简记 · 隐私政策</title>
+<style>
+  :root {
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --text: #14161a;
+    --muted: #5d6470;
+    --accent: #4c7dff;
+    --line: rgba(20, 22, 26, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d0f14;
+      --card: #161a22;
+      --text: #eef1f6;
+      --muted: #9aa3b2;
+      --line: rgba(255, 255, 255, 0.1);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 16px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Segoe UI", sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    padding: clamp(24px, 5vw, 56px);
+    box-shadow: 0 18px 60px rgba(30, 40, 80, 0.08);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .mark {
+    width: 44px; height: 44px; border-radius: 13px;
+    background: linear-gradient(135deg, #5b7cfa, #26c6b8);
+    box-shadow: 0 8px 20px rgba(76, 125, 255, 0.3);
+  }
+  .brand strong { font-size: 17px; letter-spacing: 0.02em; }
+  h1 { font-size: clamp(26px, 4vw, 34px); line-height: 1.25; margin: 0 0 8px; letter-spacing: -0.02em; }
+  h2 { font-size: 20px; line-height: 1.4; margin: 36px 0 10px; letter-spacing: -0.01em; }
+  p, li { color: var(--text); }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+  .lede { color: var(--muted); font-size: 17px; }
+  ul { padding-left: 22px; }
+  li { margin: 8px 0; }
+  .callout {
+    margin: 28px 0;
+    padding: 18px 20px;
+    border-radius: 16px;
+    background: rgba(76, 125, 255, 0.08);
+    border: 1px solid rgba(76, 125, 255, 0.18);
+  }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.92em;
+    background: rgba(127, 140, 170, 0.12);
+    padding: 2px 6px;
+    border-radius: 6px;
+    word-break: break-all;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 36px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><div class="mark" aria-hidden="true"></div><strong>简记 Jizhang</strong></div>
+  <h1>隐私政策</h1>
+  <p class="meta">生效日期：2026 年 10 月 25 日 · 更新日期：2026 年 10 月 25 日</p>
+
+  <p class="lede">简记是一款本地记账应用。我们不在服务器上收集、存储或共享你的账目数据。</p>
+
+  <div class="callout">
+    <strong>一句话总结：</strong>你的账目、收据图片与偏好设置只保存在你的设备上；简记不注册账号、不接入广告或统计 SDK、不上传服务器。
+  </div>
+
+  <h2>一、我们如何处理你的数据</h2>
+  <ul>
+    <li>我们<strong>不收集、不上传、不共享、不出售</strong>你的任何个人信息或账目数据。</li>
+    <li>账户、流水、预算、项目、成员、标签、备注、收据图片与偏好设置，均保存在你设备上的应用沙盒内。</li>
+    <li>简记当前<strong>未启用</strong> iCloud / CloudKit 同步；数据不会自动出现在其他设备上。</li>
+    <li>我们不接入广告 SDK、统计分析 SDK 或其他第三方运行时 SDK。</li>
+  </ul>
+
+  <h2>二、设备权限</h2>
+  <ul>
+    <li><strong>照片</strong>：仅当你主动选择收据图片时，系统照片选择器会把<strong>你选中的那一张图片</strong>交给简记。简记不会扫描或上传你的相册。</li>
+    <li>简记不申请通讯录、定位、麦克风、相机、健康等权限。</li>
+  </ul>
+
+  <h2>三、数据存储与删除</h2>
+  <ul>
+    <li>数据存储位置：你设备上的应用私有目录。</li>
+    <li>删除方式：删除简记 App 即删除该设备上的全部本地数据。由于我们没有服务器副本，删除后无法恢复，请在删除前自行导出备份。</li>
+    <li>数据导出：你可以在「我的 → 导出中心」或流水页导出 CSV / JSON 文件，导出文件由你自行保管。</li>
+  </ul>
+
+  <h2>四、未成年人保护</h2>
+  <p>简记不面向 14 岁以下儿童，也不会有意收集儿童个人信息。由于本应用不收集任何数据，家长可以放心地让孩子在设备本地使用。</p>
+
+  <h2>五、数据安全</h2>
+  <ul>
+    <li>所有账目数据保存在系统沙盒中，受 iOS / iPadOS 的沙盒与设备加密保护。</li>
+    <li>请妥善保管设备解锁密码，并定期通过系统备份或导出功能备份账本。</li>
+  </ul>
+
+  <h2>六、第三方服务</h2>
+  <p>简记不包含第三方广告、统计、推送或云服务。若未来版本启用 iCloud 同步或其他第三方服务，我们会在更新本政策并征得你同意后再启用。</p>
+
+  <h2>七、政策变更</h2>
+  <p>如本政策发生变更，我们会在应用内或本页面更新，并标注新的更新日期。涉及重大变更时，会在应用更新说明中告知。</p>
+
+  <h2>八、联系我们</h2>
+  <p>如对本隐私政策有任何疑问、意见或投诉，请联系：</p>
+  <ul>
+    <li>开发者：Yu Shi</li>
+    <li>邮箱：<code>shiyuwudi@gmail.com</code></li>
+  </ul>
+  <p>我们会在收到邮件后 15 个工作日内回复。</p>
+
+  <hr>
+  <footer>© 2026 简记 Jizhang · 记录每一笔生活的重量</footer>
+</main>
+</body>
+</html>

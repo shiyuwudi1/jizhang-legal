@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>简记 Jizhang</title>
+<style>
+  :root {
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --text: #14161a;
+    --muted: #5d6470;
+    --accent: #4c7dff;
+    --line: rgba(20, 22, 26, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d0f14;
+      --card: #161a22;
+      --text: #eef1f6;
+      --muted: #9aa3b2;
+      --line: rgba(255, 255, 255, 0.1);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 32px 16px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Segoe UI", sans-serif;
+  }
+  main {
+    width: 100%;
+    max-width: 560px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    padding: clamp(28px, 6vw, 48px);
+    box-shadow: 0 18px 60px rgba(30, 40, 80, 0.08);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+  .mark {
+    width: 48px; height: 48px; border-radius: 14px;
+    background: linear-gradient(135deg, #5b7cfa, #26c6b8);
+    box-shadow: 0 8px 20px rgba(76, 125, 255, 0.3);
+  }
+  .brand strong { font-size: 18px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.02em; }
+  p { color: var(--muted); margin: 0 0 24px; }
+  nav { display: grid; gap: 12px; }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 18px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    background: rgba(127, 140, 170, 0.04);
+  }
+  a span { color: var(--accent); font-weight: 500; }
+  a:hover { border-color: rgba(76, 125, 255, 0.35); }
+  footer { margin-top: 28px; color: var(--muted); font-size: 13px; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.92em;
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><div class="mark" aria-hidden="true"></div><strong>简记 Jizhang</strong></div>
+  <h1>记录每一笔生活的重量</h1>
+  <p>简记是一款面向个人和家庭的本地记账 App。所有账目默认只保存在你的设备上。</p>
+  <nav>
+    <a href="./privacy.html">隐私政策 <span>查看 →</span></a>
+    <a href="./support.html">帮助与支持 <span>查看 →</span></a>
+  </nav>
+  <footer>联系邮箱：<code>shiyuwudi@gmail.com</code></footer>
+</main>
+</body>
+</html>
